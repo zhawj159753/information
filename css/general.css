@@ -1,0 +1,22 @@
+#unity_head .unity_top{
+	width: 1200px;
+	height: 20px;
+	background-color: #A4D3EE;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0px 2px 0px #68838B;
+}
+
+#unity_head .unity_logo{
+	width: 1200px;
+	height: 110px;
+	margin-top: 2px;
+	background-color: #7D9EC0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background: -webkit-gradient(linear, left top, left bottom, 
+								color-stop(0, #3A5FCD),
+								color-stop(1, #5CACEE));
+}
