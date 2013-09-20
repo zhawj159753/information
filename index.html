@@ -5,8 +5,9 @@
 	<title>云梦县党政领导干部廉政档案登记表</title>
 	<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/> 
 	<link rel="stylesheet" type="text/css" href="css/general.css">
+	<link rel="stylesheet" href="style.css">	
 </head>
-<body>
+<body onload="body_load()">
 	<div id="unity_head">
 		<div class="unity_top"></div>
 		<div class="unity_logo">
@@ -100,7 +101,7 @@
 					<td><input type="text" style="width:400px"></td>
 				</tr>
 				<tr>
-					<th>任现职时间：</th>
+					<th>任现职时间：</th>					
 					<td><input type="text" id="start_to_current_work"></td>
 				</tr>
 				<tr>
@@ -112,23 +113,13 @@
 
 		<div id="mainly_office_condition" class="block-info-border">
 			<div>
-				<h3 class="subtitle-font">主要任职情况</h3>
+				<div class="subtitle-font">主要任职情况</div>
+				<button type="button" onclick="add_mainly_office_condition()" class="subtitle-button">&nbsp+&nbsp</button>
 				<hr class="subtitle-line">
 			</div>
-			<table cellspacing="12" style="padding-left:40px">
-				<tr>
-					<td><input type="text" placeholder="开始工作时间" id="start1"></td>
-					<td><input type="text" placeholder="结束工作时间" id="end1">：</td>
-					<td><input type="text" placeholder="所在单位" style="width:270px"></td>
-					<td><input type="text" placeholder="担任职务" style="width:200px"></td>
-				</tr>
-				<tr>
-					<td><input type="text" placeholder="开始工作时间" id="start2"></td>
-					<td><input type="text" placeholder="结束工作时间" id="end2">：</td>
-					<td><input type="text" placeholder="所在单位" style="width:270px"></td>
-					<td><input type="text" placeholder="担任职务" style="width:200px"></td>
-				</tr>
-			</table>
+			
+			<ol id="mainly_office_condition_list">
+			</ol>
 		</div>
 
 		<div id="family_member" class="block-info-border">
@@ -831,6 +822,7 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/ui.js"></script>
+<script src="js/action.js"></script>
 
 </body>
 </html>
